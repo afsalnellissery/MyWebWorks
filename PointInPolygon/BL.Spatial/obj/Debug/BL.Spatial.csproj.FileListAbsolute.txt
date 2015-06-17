@@ -1,0 +1,11 @@
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\BL.Spatial.dll.config
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\BL.Spatial.dll
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\BL.Spatial.pdb
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\EntityFramework.dll
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\EntityFramework.SqlServer.dll
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\System.Spatial.dll
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\EntityFramework.xml
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\EntityFramework.SqlServer.xml
+E:\Exercise\asp\PointInPolygon\BL.Spatial\bin\Debug\System.Spatial.xml
+E:\Exercise\asp\PointInPolygon\BL.Spatial\obj\Debug\BL.Spatial.dll
+E:\Exercise\asp\PointInPolygon\BL.Spatial\obj\Debug\BL.Spatial.pdb

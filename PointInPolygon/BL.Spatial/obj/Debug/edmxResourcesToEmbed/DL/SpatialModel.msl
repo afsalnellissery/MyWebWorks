@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SpatialDBModelStoreContainer" CdmEntityContainer="SpatialDBEntities">
+    <EntitySetMapping Name="tbl_location">
+      <EntityTypeMapping TypeName="SpatialDBModel.tbl_location">
+        <MappingFragment StoreEntitySet="tbl_location">
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SearchGeoLocation_sp" FunctionName="SpatialDBModel.Store.SearchGeoLocation_sp" />
+    <EntitySetMapping Name="tbl_School">
+      <EntityTypeMapping TypeName="SpatialDBModel.tbl_School">
+        <MappingFragment StoreEntitySet="tbl_School">
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="SchoolId" ColumnName="SchoolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

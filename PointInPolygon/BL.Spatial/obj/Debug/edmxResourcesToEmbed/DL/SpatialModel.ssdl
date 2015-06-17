@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SpatialDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_location">
+    <Key>
+      <PropertyRef Name="LocationId" />
+    </Key>
+    <Property Name="LocationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Location" Type="geography" />
+  </EntityType>
+  <EntityType Name="tbl_School">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+    </Key>
+    <Property Name="SchoolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SchoolName" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="geography" />
+  </EntityType>
+  <Function Name="SearchGeoLocation_sp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_polygon" Type="geography" Mode="In" />
+  </Function>
+  <EntityContainer Name="SpatialDBModelStoreContainer">
+    <EntitySet Name="tbl_location" EntityType="Self.tbl_location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_School" EntityType="Self.tbl_School" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
